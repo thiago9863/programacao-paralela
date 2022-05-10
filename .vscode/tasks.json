@@ -1,0 +1,17 @@
+{
+    "version": "2.0.0",
+    "tasks": [{
+      "type": "shell",
+      "label": "MS-MPI Build",
+      "command": "C:\\MinGW\\bin\\gcc.exe",
+      "args": ["-g", "${file}","-I","C:\\Program Files (x86)\\Microsoft SDKs\\MPI\\Lib\\x64","-I","C:\\Program Files (x86)\\Microsoft SDKs\\MPI\\Include",  "-o", "${fileDirname}\\${fileBasenameNoExtension}.exe"],
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "problemMatcher": ["$gcc"],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      }
+    }]
+  }
